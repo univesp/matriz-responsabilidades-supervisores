@@ -1,0 +1,44 @@
+body {
+  background-color: white;
+}
+
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+nav .logo img {
+  background-color: #ffb000!important;
+}
+
+nav .nav-link {
+  background-color: #ffb000!important;
+  color: white;
+  display: none;
+}
+
+button:hover, button:focus {
+	outline: none;
+}
+.dropdown-menu.show {
+    background-color: #ffb000!important;
+}
+
+nav .nav-link:focus, nav .nav-link:hover, nav .nav-link[aria-expanded="true"] {
+    background-color: #ffb000!important;
+    color: white!important;
+}
+
+.fa-facebook-f:before, .fa-twitter:before, .fa-whatsapp:before {
+    color: white!important;
+}
+
+.aval-rea{
+  width: 311px;
+  height: 50px;
+}
