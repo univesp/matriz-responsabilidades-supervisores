@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:image" content="assets/fb-share.png">
+  <meta name="author" content="Univesp">
+
+  <meta name="description" property="og:description" content="">
+
+  <title>Univesp | Matriz de responsabilidade de supervisores</title>
+
+  <link rel="shortcut icon" href="https://apps.univesp.br/common/favicon.ico" type="image/x-icon"/>
+
+  <!-- Arquivos Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+
+  <!-- Ícones por Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <!-- Ícones por Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Tipografia institucional por Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Barlow:300,400,700|Open+Sans:400,400i,700,700i" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,400;1,500;1,700;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Compartilhamento por jsSocials -->
+  <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.css" />
+  <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-minima.css" />
+
+  <!-- Animate CSS. Descomente se for utilizar. Caso contrário, remova. -->
+  <!-- <link rel="stylesheet" href="https://apps.univesp.br/common/animate.css"> -->
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="https://apps.univesp.br/common/rea-geral-2.1.css">
+  <!-- <link rel="stylesheet" href="../common/rea-geral-2.1.css">   -->
+  <link rel="stylesheet" href="stylesheets/nav_footer.css">
+  <link rel="stylesheet" href="stylesheets/main.css">
+  <link rel="stylesheet" href="stylesheets/intro.css">
+  <link rel="stylesheet" href="stylesheets/cards-mobile.css">
+  <link rel="stylesheet" href="stylesheets/cards-web.css">
+  <link rel="stylesheet" href="stylesheets/intro.css">
+  <link rel="stylesheet" href="stylesheets/modais.css">
+
+</head>
+
+<body class="d-flex flex-column">
+
+  <!-- Utilizar essa DIV caso o REA não se adapte a todos os tamanhos de tela -->
+  <!-- <div class="esconder-tela-pequena"> -->
+
+  <!-- Menu -->
+  <!--///////////////////////////////////////////////////////////////
+  Classe para nav
+  - padrão => header estático
+  - class="header-dinamico" => header possui posição fixa e é mostrado apenas quando a página está no topo (necessário ajustar padding ou margin superior e inferior do main).
+  //////////////////////////////////////////////////////////////////-->
+  <!-- <nav class="header-dinamico"> -->
+  <nav>
+    <div class="container">
+      <!-- Logo -->
+      <div class="logo">
+        <a class="pularNavegacao" href="#conteudoPrincipal">Pular para Conteúdo Principal</a>
+        <a href="https://univesp.br/" target="_blank">
+          <img src="https://apps.univesp.br/common/colorida-negativa.svg" alt="Link para site institucional. Logotipo da universidade formado pela palavra Univesp, sendo a letra V estilizada.">
+          <!-- outras opções de img src: colorida-negativa.svg, traco-positiva.svg, traco-negativa.svg -->
+        </a>
+      </div>
+      <!-- Compartilhamento -->
+      <ul class="nav justify-content-end">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="material-icons" aria-label="Opções de Compartilhamento">share</i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right">
+            <div class="sharing"></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Conteúdo -->
+  <main id="conteudoPrincipal">
+
+    <!-- Introdução -->
+    <section id="intro">
+      <div class='container' id="box-intro-web">
+        <div>
+          <h1>MATRIZ DE RESPONSABILIDADES <span>SUPERVISORES</span></h1>
+          <p>Você sabe quais são as suas atribuições dentro dos Processos Acadêmicos?</p>
+          <p>Conheça-as acessando este Recurso Educacional Aberto.</p>
+          <button id="btn-iniciar">iniciar</button>
+        </div>
+        <div>
+          <img src="assets/Ilustra.svg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!-- Cards Web -->
+    <section id="cards-web">
+      <div class="container-cards">
+
+        <div class="faixa-superior">
+          <div class='faixa-superior-caixa'>
+            <span>Antes de Iniciar Semestre</span>
+            <span>(clique no card para mais informações)</span>
+          </div>
+        </div>
+
+        <div class='caixa-cards-superior'>
+          <!-- Cards -->
+          <div class="card-superior" data-toggle="modal" data-target="#card-1">
+            <div class='bola'>
+              <span>1</span>
+              <span class="risco-bola-superior"></span>
+              </span> 
+            </div>
+            <button class='btn-card'>
+              <span>Construção de Disciplinas de PI, TCC, Estágio, ENADE, Educação Inclusiva e Pós-graduação</span>
+              <span>Objetivo: acompanhar, avaliar e validar todo o processo de construção de uma disciplina antes da sua oferta</span>
+              <span>Materiais a serem consultados: guia de construção de disciplina e modelo pedagógico da Univesp</span>
+            </button>
+          </div>
+
+          <div class="card-superior" data-toggle="modal" data-target="#card-2">
+            <div class='bola'>
+              <span>2</span>
+              <span class="risco-bola-superior"></span>
+              <span class='triangulo'></span>
+            </div>
+            <button class='btn-card'>
+              <span>Ensalamento e Montagem das disciplinas, PI, TCC, Estágio, ENADE, Educação inclusiva e Pós-Graduação</span>
+              <span>Objetivo: checar montagem e ensalamento de acordo com as regras da disciplinas</span>
+            </button>
+          </div>
+
+          <div class="card-superior" data-toggle="modal" data-target="#card-3">
+            <div class='bola'>
+              <span>3</span>
+              <span class="risco-bola-superior"></span>
+              <span class='triangulo'></span>
+            </div>
+            <button class='btn-card'>
+              <span>Materiais de apoio de todos os cursos de graduação, ENADE, Educação inclusiva e Pós Graduação</span>
+              <span>Objetivo: checar se todos os materiais necessários estão disponíveis para início do semestre</span>
+            </button>
+          </div>
+
+          <div class="card-superior" data-toggle="modal" data-target="#card-4">
+            <div class='bola'>
+              <span>4</span>
+              <span class="risco-bola-superior"></span>
+              <span class='triangulo'></span>
+            </div>
+            <button class='btn-card'>
+              <span>Aproveitamento de Estudos e equivalências.</span>
+            </button>
+          </div>
+
+          <div class="card-superior" data-toggle="modal" data-target="#card-5">
+            <div class='bola'>
+              <span>5</span>
+              <span class='triangulo'></span>
+              <span class='ligadura'></span>
+            </div>
+            <button class='btn-card'>
+              <span>Processo de Bolsa de Estudos para Facilitadores</span>
+            </button>
+          </div>
+        </div>
+
+        <div class='faixa-meio'>
+          <div class='faixa-inferior-caixa'>
+            <span>Semestre em Andamento</span>
+            <span>(clique no card para mais informações)</span>
+          </div>
+        </div>
+
+        <div class='caixa-cards-inferior'>
+          <div class="card-inferior" data-toggle="modal" data-target="#card-9">
+            <div class='bola'>
+              <span>9</span>
+              <span class="risco-bola-superior"></span>
+              <span class='triangulo'></span>
+              </span> 
+            </div>
+            <button class='btn-card'>
+              <span>Acompanhamento da Disciplina, PI, TCC, Estágio, ENADE, Educação inclusiva e Pós-graduação - atividades do Conteudista Disciplina</span>
+              <span>Objetivo: acompanhar as atividades do professor autor</span>
+              <span>Material a ser consultado: TR na página de transparência</span>
+            </button>
+          </div>
+
+          <div class="card-inferior" data-toggle="modal" data-target="#card-8">
+            <div class='bola'>
+              <span>8</span>
+              <span class="risco-bola-superior"></span>
+              <span class='triangulo'></span>
+            </div>
+            <button class='btn-card'>
+              <span>Mediação pedagógica para todos os cursos da UNIVESP</span>
+              <span>Objetivo: a partir de indicadores de performance, checar, avaliar e agir sobre a atuação dos supervisores e facilitadores</span>
+            </button>
+          </div>
+
+          <div class="card-inferior" data-toggle="modal" data-target="#card-7">
+            <div class='bola'>
+              <span>7</span>
+              <span class="risco-bola-superior"></span>
+              <span class='triangulo'></span>
+            </div>
+            <button class='btn-card'>
+              <span>Correção de Relatório de Estágio</span>
+            </button>
+          </div>
+
+          <div class="card-inferior" data-toggle="modal" data-target="#card-6">
+            <div class='bola'>
+              <span>6</span>
+              <span class='triangulo'></span>
+            </div>
+            <button class='btn-card'>
+              <span>Acompanhamento do Atendimento ao Aluno - via SAE e via POLOS.</span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Cards Mobile -->
+    <section></section>
+
+    <!-- Modais -->
+    <section>
+      <div id='modais-cards'>
+        <div class="modal fade" id="card-1" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal"> X FECHAR</button>
+              </div>
+              <div class="modal-body">
+                <h6>CARD 1</h6>
+                <p class="que-atividade">Que atividade deve ser feita?</p>
+                <div class="modal-caixona">
+  
+                  <div class="modal-caixa-lista">
+                    <div class="modal-caixa-lista-item">
+                      <span class="modal-caixa-lista-item-bola">1</span>
+                      <p>LER O MATERIAL E RESPONDER: Tem objetivos de aprendizagem claros e materializáveis de acordo com Taxonomia de Bloom?</p>
+                    </div>
+  
+                    <div class="modal-caixa-lista-item">
+                      <span class="modal-caixa-lista-item-bola">2</span>
+                      <p>LER O MATERIAL E RESPONDER: Os textos, atividades e videoaulas propostos representam as futuras atividades profissionais do aluno? Há uma relação direta com a prática?</p>
+                    </div>
+  
+                    <div class="modal-caixa-lista-item">
+                      <span class="modal-caixa-lista-item-bola">3</span>
+                      <p>LER O MATERIAL E RESPONDER: Os textos, atividades e videoaulas propostos materializam os objetivos de aprendizagem?</p>
+                    </div>
+  
+                    <div class="modal-caixa-lista-item">
+                      <span class="modal-caixa-lista-item-bola">4</span>
+                      <p>Resolver atividades avaliativas e quizzes para checar eventuais erros</p>
+                    </div>
+  
+                    <div class="modal-caixa-lista-item">
+                      <span class="modal-caixa-lista-item-bola">5</span>
+                      <p>LER O MATERIAL E RESPONDER: A carga-horária de conteúdo elaborado condiz com a carga-horária da disciplina? As métricas que quantificam conteúdo foram usadas?</p>
+                    </div>                  
+  
+                    <div class="modal-caixa-lista-item">
+                      <span class="modal-caixa-lista-item-bola">6</span>
+                      <p>LER O MATERIAL E RESPONDER: As provas avaliam as competências propostas a partir dos objetivos de aprendizagem?</p>
+                    </div>
+  
+                    <div class="modal-caixa-lista-item">
+                      <span class="modal-caixa-lista-item-bola">7</span>
+                      <p>Resolver questões de provas para checar eventuais erros</p>
+                    </div>
+  
+                    <div class="modal-caixa-lista-item">
+                      <span class="modal-caixa-lista-item-bola">8</span>
+                      <p>Como você avalia a entrega da disciplina (conteúdo completo) pelo conteudista?</p>
+                    </div>
+  
+                    <div class="modal-caixa-lista-item">
+                      <span class="modal-caixa-lista-item-bola">9</span>
+                      <p>Como você avalia a entrega da disciplina (conteúdo completo) pelo supervisor?</p>
+                    </div>
+  
+                    <div class="modal-caixa-lista-item">
+                      <span class="modal-caixa-lista-item-bola">10</span>
+                      <p>A sala dos facilitadores está planejada para atender necessidades básicas de interação, mediação e acompanhamento de conteúdo?</p>
+                    </div>
+                  </div>
+  
+                  <div class="modal-caixa-lista-direita">
+                    <div class="curvinha">
+                      <span class="curvinha-a"></span>
+                      <span class="curvinha-b"></span>
+                    </div>
+                  </div>
+  
+                  <div class="caixa-direita-modal-texto">
+                      <div class="modal-caixa-o-que-fazer">
+                        <p>O que fazer?</p>
+                        <p>Analisar, checar necessidades de mudança e comunicar.</p>
+                      </div>
+      
+                      <div class="modal-caixa-lista-area">
+                        <p>Área que o processo ocorre</p>
+                        <p>Arte e Criação - Wesley</p>
+                      </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="modal fade" id="card-2" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal"> X FECHAR</button>
+              </div>
+              <div class="modal-body">
+                <h6>CARD 2</h6>
+                <p class="que-atividade">Que atividade deve ser feita?</p>
+                <div class="modal-caixona">
+  
+                  <div class="modal-caixa-lista">
+                    <div class="modal-caixa-lista-item">
+                      <span class="modal-caixa-lista-item-bola">1</span>
+                      <p>O autor está ensalado na disciplina?</p>
+                    </div>
+  
+                    <div class="modal-caixa-lista-item">
+                      <span class="modal-caixa-lista-item-bola">2</span>
+                      <p>O docente responsável está ensalado na disciplina?</p>
+                    </div>
+  
+                    <div class="modal-caixa-lista-item">
+                      <span class="modal-caixa-lista-item-bola">3</span>
+                      <p>Os facilitadores foram ensalados corretamente? Eles foram alocados de acordo com a área da disciplina?</p>
+                    </div>
+  
+                    <div class="modal-caixa-lista-item">
+                      <span class="modal-caixa-lista-item-bola">4</span>
+                      <p>As disciplinas de PI foram organizadas de acordo com a regra de ensalamento e atribuição? Quantos alunos por grupo? Quantos facilitadores?</p>
+                    </div>
+  
+                    <div class="modal-caixa-lista-item">
+                      <span class="modal-caixa-lista-item-bola">5</span>
+                      <p>As disciplinas de TCC foram organizadas de acordo com a regra de ensalamento e atribuição? Há quantidade suficiente de facilitadores para os cursos de graduação? Há quantidade suficiente de docentes univesp para grupos de pós-graduação?</p>                  
+                    </div>                  
+  
+                    <div class="modal-caixa-lista-item">
+                      <span class="modal-caixa-lista-item-bola">6</span>
+                      <p>As disciplinas de estágio foram organizadas de acordo com a regra de estágio? Há quantidade suficiente de facilitadores?</p>                 
+                    </div>
+  
+                    <div class="modal-caixa-lista-item">
+                      <span class="modal-caixa-lista-item-bola">7</span>
+                      <p>O AVA está pronto para receber os alunos? Sala master foi configurada? Atividades com data? Fóruns abertos? Collaborate ativo? Agenda de lives planejada e configurada? Configuração de grupos adequada?</p>                 
+                    </div>
+  
+                    <div class="modal-caixa-lista-item">
+                      <span class="modal-caixa-lista-item-bola">8</span>
+                      <p>As questões de provas estão inseridas no sistema? Elas seguem o padrão Univesp?</p>                 
+                    </div>
+                  </div>
+  
+                  <div class="modal-caixa-lista-direita">
+                    <div class="curvinha">
+                      <span class="curvinha-a"></span>
+                      <span class="curvinha-b"></span>
+                    </div>
+                  </div>
+  
+                  <div class="caixa-direita-modal-texto">
+                    <div class="modal-caixa-o-que-fazer">
+                      <p>O que fazer?</p>
+                      <p>Analisar, checar necessidades de mudança e comunicar.</p>
+                    </div>
+    
+                    <div class="modal-caixa-lista-area">
+                      <p>Área que o processo ocorre</p>
+                      <p>Arte e Criação - Wesley</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="modal fade" id="card-3" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal"> X FECHAR</button>
+              </div>
+              <div class="modal-body">
+                <h6>CARD 3</h6>
+                <p class="que-atividade">Que atividade deve ser feita?</p>
+                <div class="modal-caixona">
+  
+                  <div class="modal-caixa-lista">
+                    <div class="modal-caixa-lista-item">
+                      <span class="modal-caixa-lista-item-bola">1</span>
+                      <p>O calendário acadêmico está no ar? Foi atualizado em todos os ambientes (AVA e manual do aluno)?</p>
+                    </div>
+  
+                    <div class="modal-caixa-lista-item">
+                      <span class="modal-caixa-lista-item-bola">2</span>
+                      <p>A sala de orientação para os facilitadores está disponível? Como está o teams?</p>
+                    </div>
+  
+                    <div class="modal-caixa-lista-item">
+                      <span class="modal-caixa-lista-item-bola">3</span>
+                      <p>Como está o mural de avisos? Qual o planejamento para comunicação com alunos?</p>
+                    </div>
+  
+                    <div class="modal-caixa-lista-item">
+                      <span class="modal-caixa-lista-item-bola">4</span>
+                      <p>Manual do Aluno está no ar?</p>
+                    </div>
+  
+                    <div class="modal-caixa-lista-item">
+                      <span class="modal-caixa-lista-item-bola">5</span>
+                      <p>O plano de ensino das disciplinas está no ar</p>
+                    </div>                  
+  
+                    <div class="modal-caixa-lista-item">
+                      <span class="modal-caixa-lista-item-bola">6</span>
+                      <p>Tutoriais estão no ar: para uso do AVA e ferramentas colaborativas?</p>
+                    </div>
+  
+                    <div class="modal-caixa-lista-item">
+                      <span class="modal-caixa-lista-item-bola">7</span>
+                      <p>Menu/link de acesso aos gabaritos de atividades avaliativas está ativo? Como estamos procedendo com recursos?</p> 
+                    </div>
+  
+                    <div class="modal-caixa-lista-item">
+                      <span class="modal-caixa-lista-item-bola">8</span>
+                      <p>As bibliotecas virtuais estão no ar?</p>                 
+                    </div>
+  
+                    <div class="modal-caixa-lista-item">
+                      <span class="modal-caixa-lista-item-bola">9</span>
+                      <p>A brinquedoteca está no ar dentro do AVA no menu lateral esquerdo? Somente para licenciaturas</p>                 
+                    </div>
+  
+                    <div class="modal-caixa-lista-item">
+                      <span class="modal-caixa-lista-item-bola">10</span>
+                      <p>Os REAs estão no ar no menu lateral esquerdo em todos os cursos?</p>                 
+                    </div>
+                  </div>
+  
+                  <div class="modal-caixa-lista-direita">
+                    <div class="curvinha">
+                      <span class="curvinha-a"></span>
+                      <span class="curvinha-b"></span>
+                    </div>
+                  </div>
+                  
+                  <div class="caixa-direita-modal-texto">
+                    <div class="modal-caixa-o-que-fazer">
+                      <p>O que fazer?</p>
+                      <p>Analisar, checar necessidades de mudança e comunicar.</p>
+                    </div>
+    
+                    <div class="modal-caixa-lista-area">
+                      <p>Área que o processo ocorre</p>
+                      <p>Arte e Criação - Wesley</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="modal fade" id="card-4" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal"> X FECHAR</button>
+              </div>
+              <div class="modal-body">
+                <h6>CARD 4</h6>
+                <p class="que-atividade">Que atividade deve ser feita?</p>
+                <div class="modal-caixona">
+  
+                  <div class="modal-caixa-lista">
+                    <div class="modal-caixa-lista-item">
+                      <span class="modal-caixa-lista-item-bola">1</span>
+                      <p>Aproveitamento e equivalência de estudos disciplinas, TCC e estágio.</p>
+                    </div>
+                  </div>
+  
+                  <div class="modal-caixa-lista-direita">
+                    <div class="curvinha">
+                      <span class="curvinha-a"></span>
+                      <span class="curvinha-b"></span>
+                    </div>
+                  </div>
+                  
+                  <div class="caixa-direita-modal-texto">
+                    <div class="modal-caixa-o-que-fazer">
+                      <p>O que fazer?</p>
+                      <p>Analisar, checar necessidades de mudança e comunicar.</p>
+                    </div>
+    
+                    <div class="modal-caixa-lista-area">
+                      <p>Área que o processo ocorre</p>
+                      <p>Mediação - Luiz Teixeira</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="modal fade" id="card-5" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal"> X FECHAR</button>
+              </div>
+              <div class="modal-body">
+                <h6>CARD 5</h6>
+                <p class="que-atividade">Que atividade deve ser feita?</p>
+                <div class="modal-caixona">
+
+                  <div class="modal-caixa-lista">
+                    <div class="modal-caixa-lista-item">
+                      <span class="modal-caixa-lista-item-bola">1</span>
+                      <p>Os alunos bolsistas alocados suprem as demandas das disciplinas em termo de qualidade e quantidade?</p>
+                    </div>
+  
+                    <div class="modal-caixa-lista-item">
+                      <span class="modal-caixa-lista-item-bola">2</span>
+                      <p>O curso de pós-graduação tem suprido às necessidades de formação? A equipe de mediação tem sido contemplada com a demanda ou há necessidade de capacitações específicas?</p>
+                    </div>
+
+                    <div class="modal-caixa-lista-item">
+                      <span class="modal-caixa-lista-item-bola">3</span>
+                      <p>Avaliação e checagem de relatório dos facilitadores</p>
+                    </div>
+                  </div>
+  
+                  <div id="modal-5-tracos">
+                    <span></span>
+                    <span></span>
+                  </div>
+  
+                  <div class="modal-caixa-o-que-fazer">
+                    <p>O que fazer?</p>
+                    <p>Analisar, checar necessidades de mudança e comunicar.</p>
+                    <p>Analisar, checar necessidades de mudança e executar.</p>
+                  </div>
+
+                  <div class="modal-caixa-lista-area">
+                    <p>Área que o processo ocorre</p>
+                    <p>Mediação - Luiz Teixeira </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="modal fade" id="card-6" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal"> X FECHAR</button>
+              </div>
+              <div class="modal-body">
+                <h6>CARD 6</h6>
+                <p class="que-atividade">Que atividade deve ser feita?</p>
+                <div class="modal-caixona">
+  
+                  <div class="modal-caixa-lista">
+                    <div class="modal-caixa-lista-item">
+                      <span class="modal-caixa-lista-item-bola">1</span>
+                      <p>Resposta de protocolo de segunda instância do O que fazer?</p>
+                    </div>
+  
+                    <div class="modal-caixa-lista-item">
+                      <span class="modal-caixa-lista-item-bola">2</span>
+                      <p>Existe alguma alta demanda de atendimento que pode apresentar alguma anormalidade? É necessário tomar alguma ação?</p>
+                    </div>
+                  </div>
+  
+                  <div class="modal-caixa-lista-direita">
+                    <div class="curvinha">
+                      <span class="curvinha-a"></span>
+                      <span class="curvinha-b"></span>
+                    </div>
+                  </div>
+  
+                  <div class="caixa-direita-modal-texto">
+                    <div class="modal-caixa-o-que-fazer">
+                      <p>O que fazer?</p>
+                      <p>Analisar, checar necessidades de mudança e executar</p>
+                    </div>
+    
+                    <div class="modal-caixa-lista-area">
+                      <p>Área que o processo ocorre</p>
+                      <p>TI - Atendimento Juliane</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="modal fade" id="card-7" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal"> X FECHAR</button>
+              </div>
+              <div class="modal-body">
+                <h6>CARD 7</h6>
+                <p class="que-atividade">Que atividade deve ser feita?</p>
+                <div class="modal-caixona">
+  
+                  <div class="modal-caixa-lista">
+                    <div class="modal-caixa-lista-item">
+                      <span class="modal-caixa-lista-item-bola">1</span>
+                      <p>Correção de Relatório</p>
+                    </div>
+                  </div>
+  
+                  <div class="modal-caixa-lista-direita">
+                    <div></div>
+                  </div>
+  
+                  <div class="modal-caixa-o-que-fazer">
+                    <p>O que fazer?</p>
+                    <p>Analisar, checar necessidades de mudança e executar</p>
+                  </div>
+  
+                  <div class="modal-caixa-lista-area">
+                    <p>Área que o processo ocorre</p>
+                    <p>Núcleo de Estágio</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="modal fade" id="card-8" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal"> X FECHAR</button>
+              </div>
+              <div class="modal-body">
+                <h6>CARD 8</h6>
+                <p class="que-atividade">Que atividade deve ser feita?</p>
+                <div class="modal-caixona">
+  
+                  <div class="modal-caixa-lista">
+                    <div class="modal-caixa-lista-item">
+                      <span class="modal-caixa-lista-item-bola">1</span>
+                      <p>Facilitadores estão acessando AVA e enviando notificações de acesso e participação?</p>
+                    </div>
+  
+                    <div class="modal-caixa-lista-item">
+                      <span class="modal-caixa-lista-item-bola">2</span>
+                      <p>Facilitadores estão participando dos fóruns no AVA e enviando notificações de acesso e participação? </p>
+                    </div>
+  
+                    <div class="modal-caixa-lista-item">
+                      <span class="modal-caixa-lista-item-bola">3</span>
+                      <p>Facilitadores estão orientando grupos (PI, TCC e Estágio) no AVA e enviando notificações de acesso e participação? Eles apresentaram cronograma de encontro síncrono com os alunos? Eles estão corrigindo as atividades em tempo? Estão dando feedback adequado e a tempo?</p>
+                    </div>
+  
+                    <div class="modal-caixa-lista-item">
+                      <span class="modal-caixa-lista-item-bola">4</span>
+                      <p>Facilitadores apresentaram calendário dos encontros síncronos (lives) e estão enviando notificações de acesso e participação? Estão cumprindo com o planejado?</p>
+                    </div>
+  
+                    <div class="modal-caixa-lista-item">
+                      <span class="modal-caixa-lista-item-bola">5</span>
+                      <p>Facilitadores estão acompanhando as atividades avaliativas e estão enviando notificações de acesso e participação? Estão dando feedback adequado?</p>
+                    </div>
+                  </div>
+  
+                  <div class="modal-caixa-lista-direita">
+                    <div class="curvinha">
+                      <span class="curvinha-a"></span>
+                      <span class="curvinha-b"></span>
+                    </div>
+                  </div>
+  
+                  <div class="caixa-direita-modal-texto">
+                    <div class="modal-caixa-o-que-fazer">
+                      <p>O que fazer?</p>
+                      <p>Analisar, checar necessidades de mudança e comunicar</p>
+                    </div>
+    
+                    <div class="modal-caixa-lista-area">
+                      <p>Área que o processo ocorre</p>
+                      <p>Mediação - Luiz Teixeira</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="modal fade" id="card-9" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal"> X FECHAR</button>
+              </div>
+              <div class="modal-body">
+                <h6>CARD 9</h6>
+                <p class="que-atividade">Que atividade deve ser feita?</p>
+                <div class="modal-caixona">
+  
+                  <div class="modal-caixa-lista">
+                    <div class="modal-caixa-lista-item">
+                      <span class="modal-caixa-lista-item-bola">1</span>
+                      <p>O professor-autor está acompanhando a disciplina no AVA? Ele atende às demandas dos alunos, docentes e equipe? O autor está acessando o AVA? CHECAR AVA, BI UNIVESP, RELATÓRIO DE ACOMPANHAMENTO</p>
+                    </div>
+  
+                    <div class="modal-caixa-lista-item">
+                      <span class="modal-caixa-lista-item-bola">2</span>
+                      <p>O professor-autor está acompanhando está entregando o relatório de revisão, checagem, acompahamento da aula foi preenchido e entregue? CHECAR AVA, BI UNIVESP, RELATÓRIO DE ACOMPANHAMENTO</p>
+                    </div>
+                  </div>
+  
+                  <div id="modal-9-traços">
+                    <span></span>
+                    <span></span>
+                  </div>
+  
+                  <div class="modal-caixa-o-que-fazer">
+                    <p>O que fazer?</p>
+                    <p>Analisar, checar necessidades de mudança e executar.</p>
+                    <p>Analisar, checar necessidades de mudança e comunicar.</p>
+                  </div>
+  
+                  <div class="modal-caixa-lista-area">
+                    <p>Área que o processo ocorre</p>
+                    <p>Mediação - Luiz Teixeira</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <!-- RODAPÉ -->
+  <!--//////////////////////////////////////////////////////
+  Classes prontas p/ footer (podem ser combinadas):
+  padrão => texto e contornos em cinza
+  class = "black" => texto e contornos em preto
+  class = "negativo" => texto e contornos em branco, sobre fundo escuro
+  class = "transparente" => fundo transparente (necessário ajustar cor dos ícones de compartilhamento nos círculos, para bater com a cor de fundo)
+  /////////////////////////////////////////////////////////-->
+  <!-- <footer class="black"> -->
+  <!-- <footer class="negativo"> -->
+  <!-- <footer class="transparente"> -->
+  <!-- <footer class="transparente black"> -->
+  <!-- <footer class="transparente negativo"> -->
+  <footer>
+    <div class="container d-flex justify-content-between">
+
+      <div class="cred-rea">
+        <!-- Comente em caso de adaptação do REA -->
+          <div>Recurso Educacional Aberto (REA) desenvolvido pela <a href="https://univesp.br/" target="blank">Univesp</a>, disponível sob licença <a href="http://apps.univesp.br/common/license_MIT_2020.txt" target="_blank">MIT</a>.
+          Você pode utilizá-lo, compartilhá-lo e modificá-lo.</div>
+          <div><button class="btn btn-link" data-toggle="modal" data-target="#creditos">Créditos</button></div>
+          <div><a href="#" target="_blank" aria-label="GitHub" style="white-space:nowrap;">GitHub <i class="fab fa-github"></i></a></div>
+          <div>Compartilhe: <div class="sharing"></div></div>
+      </div>
+
+      <!-- FORMULÁRIOS DE AVALIAÇÃO -->
+      <div class="aval-rea d-flex">
+        <!-- AVALIAR RECURSO -->
+        <!-- Atualizar "Nome+do+Recurso" -->
+        <!-- <a class="btn btn-secondary" href="https://docs.google.com/forms/d/e/1FAIpQLSfoe5bxjjASle0FQSNtxvEvL73yVqlXtedVCcLs0-uOYwfHmA/viewform?usp=pp_url&entry.542052009=Nome+do+Recurso" target="_blank">Avaliar este recurso</a> -->
+        <!-- REPORTAR ERRO -->
+        <!-- Atualizar "Nome+do+Recurso" -->
+        <!-- <a class="btn btn-secondary" href="https://docs.google.com/forms/d/e/1FAIpQLSeE4DT6yuFY4wArPAPQ86GMbRLFwnlTLG-C-s5t2mFdRkR8bA/viewform?usp=pp_url&entry.1523910789=Nome+do+Recurso" target="_blank">Reportar erro</a> -->
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- CRÉDITOS -->
+  <div class="modal fade" id="creditos" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+
+          <h6>Governo do Estado de São Paulo</h6>
+          <p>Secretaria de Desenvolvimento Econômico</p>
+
+          <h6>UNIVERSIDADE VIRTUAL DO ESTADO DE SÃO PAULO – UNIVESP</h6>
+          <p><span class="funcao">Presidente</span>Rodolfo Jardim de Azevedo</p>
+          <p><span class="funcao">Diretora Acadêmica</span>Simone Telles Martins Ramos</p>
+
+          <h6>Equipe</h6>
+          <p><span class="funcao">Docente responsável</span>Fulano de Tal</p>
+          <p><span class="funcao">Coordenação</span>Édison Trombeta</p>
+          <p><span class="funcao">Roteirização e Design Instrucional</span>Fulano de Tal, Ciclano de Tal</p>
+          <p><span class="funcao">Ilustração</span>Fulano de Tal, Ciclano de Tal</p>
+          <p><span class="funcao">Layout</span>Pedro Belém</p>
+          <p><span class="funcao">Programação</span>Alberto Ortiz Mendes</p>
+          <p><span class="funcao">Revisão</span>Fulano de Tal, Ciclano de Tal</p>
+
+        </div>
+        <div class="modal-footer">
+          <p>Agosto/2022</p>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Arquivos Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://apps.univesp.br/common/jquery-ui-touch-punch.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+  <!-- jsSocials -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.min.js"></script>
+  <script>
+    var share = $(".sharing");
+    var page_title = $(document).attr('title');
+    var page_url = window.location.href;
+    share.jsSocials({
+      shares: [
+        {
+          share: "facebook",
+          logo: "fab fa-facebook-f",
+        },
+        {
+          share: "twitter",
+          logo: "fab fa-twitter",
+        },
+        {
+          share: "whatsapp",
+          logo: "fab fa-whatsapp",
+        },
+      ],
+      url: page_url,
+      text: 'Confira o REA ' + page_title + '.',
+      showLabel: false,
+      showCount: false,
+      shareIn: "popup",
+    });
+  </script>
+
+  <!-- Custom JS -->
+  <script type="text/javascript" src="javascripts/events.js"></script>
+  <!-- Analytics. Remova em caso de reutilização do REA -->
+  <script src="https://apps.univesp.br/common/analytics.js"></script>
+
+</body>
+
+</html>
